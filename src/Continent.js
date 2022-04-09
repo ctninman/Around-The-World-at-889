@@ -2,6 +2,7 @@ function Continent ({country}) {
 
   return (
     <div 
+      className='listed-country'
       style=
         {{paddingLeft: '10px',
         display: 'flex', 

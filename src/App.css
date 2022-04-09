@@ -305,3 +305,15 @@ ul {
   color: white;
 }
 
+
+.listed-country {
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.listed-country:hover {
+  box-shadow: inset 165px 0 0 0 #609240;
+}
+
+
