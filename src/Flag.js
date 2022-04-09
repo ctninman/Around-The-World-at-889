@@ -5,11 +5,11 @@ function Flag ({country}) {
   const [ revealFlag, setRevealFlag ] = useState(false)
 
   return (
-    <div onClick={() => setRevealFlag(!revealFlag)} className='flag_card'>
+    <div onClick={() => setRevealFlag(!revealFlag)} className='flag-section-card'>
       {revealFlag 
         ?  
         <div style ={{display: 'flex', justifyContent: 'center', height: '130px', width: '200px', borderRadius: '5px', alignItems: 'center'}}>
-          <div style={{display: 'flex', justifyContent: 'center', height: '80px', width: '200px', borderRadius: '5px', color: 'white', backgroundColor: 'black', alignItems: 'center', border: '2px solid white'}}> 
+          <div className='show-country' style={{display: 'flex', justifyContent: 'center', height: '80px', width: '200px', borderRadius: '5px', color: 'white', backgroundColor: 'black', alignItems: 'center', border: '2px solid white'}}> 
             <h2>{country.name.common} </h2> 
           </div>
         </div>  

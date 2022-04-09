@@ -7,7 +7,7 @@ function Country ({country}) {
     // *** JSX *** //
   return (
     <div className={'country_card'}>
-      <h2 style={{textAlign: 'center'}}>
+      <h2 style={{cursor: 'default', textAlign: 'center'}}>
         {country.name.common}
       </h2>
       <img className={'flag_card'} style={{border: '2px solid'}}src={country.flags.png} alt="Flag" />

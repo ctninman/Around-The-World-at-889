@@ -9,8 +9,8 @@ function CapitalCard ({country}) {
       {revealCapital 
         ?  
         <div style ={{display: 'flex', justifyContent: 'center', height: '120px', width: '150px', borderRadius: '5px', color: 'darkblue'}}>
-          <div style={{backgroundColor: 'black', color: 'white', height: '75px', borderRadius: '5px', width: '150px', wordWrap: 'break-word', alignItems: 'center', border: '2px solid', borderColor: 'white'}}>
-            <h3>{country.capital}</h3>
+          <div className='show-capital' style={{backgroundColor: 'black', color: 'white', height: '75px', borderRadius: '5px', width: '150px', wordWrap: 'break-word', alignItems: 'center', border: '2px solid', borderColor: 'white'}}>
+            <h3 style={{cursor: 'alias'}}>{country.capital}</h3>
           </div>    
         </div>  
         : 

@@ -13,8 +13,7 @@ function Continent ({country}) {
         backgroundColor: 'white', 
         margin: '10px', 
         width: '150px', 
-        height: '40px', 
-        flexWrap: 'wrap', 
+        height: '40px',  
         borderRadius: '5px'}}>
       <h4>{country.flag} {country.name.common}</h4>
     </div>

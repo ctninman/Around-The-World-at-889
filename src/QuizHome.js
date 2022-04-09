@@ -10,16 +10,16 @@ function QuizHome ({continentHighScore, flagHighScore, capitalHighScore, populat
         marginRight: '15%'}}>
           {fullUserObject.userName}'s Total Score: {userScore}
         </h1>
-      <h2>
+      <h2 style={{cursor: 'default'}}>
         Continents High Score: {continentHighScore}
       </h2>
-      <h2>
+      <h2 style={{cursor: 'default'}}>
         Flags High Score: {flagHighScore}
       </h2>
-      <h2>
+      <h2 style={{cursor: 'default'}}>
         Capitals High Score: {capitalHighScore}
       </h2>
-      <h2>
+      <h2 style={{cursor: 'default'}}>
         Population High Score: {populationHighScore}
       </h2>
     </div>

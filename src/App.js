@@ -6,8 +6,8 @@ import Continents from './Continents'
 import Population from './Population'
 import Home from './Home'
 import Quizzes from './Quizzes';
-import NavBar from './NavBar';
 import CountriesList from './CountriesList';
+import NavBar from './NavBar';
 
 import './App.css'
 
@@ -82,23 +82,22 @@ function App() {
   }
 
   function postUserData (object) {  
-    if (fullUserObject.userName && fullUserObject.userName !== '')
-      fetch(`http://localhost:3000/users`, {
-        method: "POST",
-        headers: {"Content-Type": "application/json",},
-        body: JSON.stringify(object),
+    fetch(`http://localhost:3000/users`, {
+      method: "POST",
+      headers: {"Content-Type": "application/json",},
+      body: JSON.stringify(object),
+    })
+      .then((res) => {
+        return res.json()
       })
-        .then((res) => {
-          return res.json()
-        })
-        .then(fullUserObject => {
-          setFullUserObject(fullUserObject)
-          setContinentHighScore(fullUserObject.continentsHighScore)
-          setCapitalHighScore(fullUserObject.capitalsHighScore)
-          setFlagHighScore(fullUserObject.flagsHighScore)
-          setPopulationHighScore(fullUserObject.populationHighScore)
-          setUserScore(fullUserObject.flagsHighScore + fullUserObject.populationHighScore + fullUserObject.continentsHighScore + fullUserObject.capitalsHighScore)
-        });
+      .then(fullUserObject => {
+        setFullUserObject(fullUserObject)
+        setContinentHighScore(fullUserObject.continentsHighScore)
+        setCapitalHighScore(fullUserObject.capitalsHighScore)
+        setFlagHighScore(fullUserObject.flagsHighScore)
+        setPopulationHighScore(fullUserObject.populationHighScore)
+        setUserScore(fullUserObject.flagsHighScore + fullUserObject.populationHighScore + fullUserObject.continentsHighScore + fullUserObject.capitalsHighScore)
+      });
   }
 
   function alphabetize ( a, b ) {

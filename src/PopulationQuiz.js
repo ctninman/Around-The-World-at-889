@@ -24,27 +24,6 @@ function PopulationQuiz ({countryData, orderNumbers, populationHighScore, setPop
     }
   }
 
-  // function checkForPopulationDuplicates (a, b, c, d, countryArray) {
-  //   while (a === b) {
-  //     b = countryArray[Math.floor(Math.random()*countryArray.length)]
-  //   }
-  //   while (a === c) {
-  //     c = countryArray[Math.floor(Math.random()*countryArray.length)]
-  //   }
-  //   while (a === d) {
-  //     d = countryArray[Math.floor(Math.random()*countryArray.length)]
-  //   }
-  //   while (b === c) {
-  //     c = countryArray[Math.floor(Math.random()*countryArray.length)]
-  //   }
-  //   while (b === d) {
-  //     d = countryArray[Math.floor(Math.random()*countryArray.length)]
-  //   }
-  //   while (c === d) {
-  //     d = countryArray[Math.floor(Math.random()*countryArray.length)]
-  //   }
-  // }
-
   function handlePopulationAnswer (event) {
     if (populationResponseGiven === false) {
       if (event.target.value === orderedCountriesArray[0].name.common) {

@@ -3,8 +3,6 @@ import Flag from './Flag'
 
 function Flags ({ flagCountryList, setFlagCountryList, allCountries, flagsContinent, setFlagsContinent}) {
 
-  
-
   useEffect (() => {
     document.title = "WQW - Flags"
   }, [] )

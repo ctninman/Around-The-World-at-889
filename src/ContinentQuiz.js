@@ -38,9 +38,9 @@ function ContinentQuiz ({countryData, continentHighScore, setContinentHighScore,
 
   function setNextQuestion () {
     setContinentQuizCountry(countryData[Math.floor(Math.random()*countryData.length)])
-    if (continentQuizCountry.name.common === 'Russia' || continentQuizCountry.name.common === 'Turkey') {
-      setContinentQuizCountry(countryData[Math.floor(Math.random()*countryData.length)])
-    }
+    // if (continentQuizCountry.name.common === 'Russia' || continentQuizCountry.name.common === 'Turkey') {
+    //   setContinentQuizCountry(countryData[Math.floor(Math.random()*countryData.length)])
+    // }
     setCurrentContinentQuestion(currentContinentQuestion + 1)
     setContinentResponseGiven(false)
     resetButtonColors()

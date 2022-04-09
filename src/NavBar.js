@@ -24,6 +24,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >
@@ -32,6 +33,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/countries'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >
@@ -40,6 +42,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/capitals'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >
@@ -48,6 +51,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/continents'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >
@@ -56,6 +60,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/flags'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >
@@ -64,6 +69,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/population'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >
@@ -72,6 +78,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       <NavLink
         to='/quizzes'
         exact
+        className='nav-link'
         style={linkStyles}
         activeStyle={{background: "#93C572", color: 'black'}}
       >

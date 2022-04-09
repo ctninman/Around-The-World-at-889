@@ -3,13 +3,6 @@ import {useEffect} from 'react'
 
 function Continents ({alphabetize, countries, continentCountryList, setContinentCountryList, selectedContinents, setSelectedContinents}) {
    
-    // *** STATE VARIABLES *** // 
-  
-
-  // useEffect (() => {
-  //   setCountryList(countries)
-  // }, [])
-
   useEffect (() => {
     document.title = "WQW - Continents"
   }, [] )
@@ -46,7 +39,8 @@ function Continents ({alphabetize, countries, continentCountryList, setContinent
         <h2 
           className='tab-header' 
           style=
-            {{backgroundColor: '#609240', 
+            {{cursor: 'default',
+            backgroundColor: '#609240', 
             color: 'white', marginLeft: '200px', 
             marginRight: '200px', 
             marginTop: '0px'}}

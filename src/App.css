@@ -82,6 +82,45 @@ button {
   border-radius: 5px;
   border: 3px solid;
   box-shadow: 5px 5px 5px black;
+  transition: transform 300ms; 
+}
+
+h1:hover {
+  cursor: default;
+}
+
+/* h2:hover {
+  cursor: default;
+} */
+
+h3:hover {
+  cursor: default;
+}
+
+h4:hover {
+  cursor: default;
+}
+
+h5:hover {
+  cursor: default;
+}
+
+h6:hover {
+  cursor: default;
+}
+
+button:hover {
+  transform: translate(3%, 3%);
+  cursor: pointer;
+}
+
+.nav-link {
+  transition: transform 300ms; 
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  transform: translate(3%, 3%);
 }
 
 ul {
@@ -115,6 +154,23 @@ ul {
   margin: 10px;
 }
 
+.flag-section-card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  justify-content: center;
+  height: 140px; 
+  width: 210px;
+  align-content: center;
+  /* transition: transform 300ms;  */
+}
+
+/* .flag-section-card:hover {
+  transform: translate( -3%, -3% );
+  cursor: alias;
+} */
+
 .flag_card {
   border-radius: 5px;
   display: flex;
@@ -124,7 +180,13 @@ ul {
   height: 140px; 
   width: 210px;
   align-content: center;
-  
+  transition: all 1000ms; 
+}
+
+.flag_card:hover {
+  transform: scale( 1.2 );
+  cursor: default;
+  margin-bottom: 15px;
 }
 
 .capital_card {
@@ -148,6 +210,30 @@ ul {
   max-height: 120px;
   margin-top: 5px;
   box-shadow: 5px 5px 5px black;
+  transition: transform 300ms; 
+}
+
+.capital_card_flag:hover {
+  transform: translate( -3%, -3% );
+  cursor: alias;
+}
+
+.show-capital {
+  transition: transform 300ms; 
+}
+
+.show-capital:hover {
+  transform: translate( 5%, 5% );
+  cursor: alias;
+}
+
+.show-country {
+  transition: transform 300ms; 
+}
+
+.show-country:hover {
+  transform: translate( 5%, 5% );
+  cursor: alias;
 }
 
 .quiz-menu {
@@ -158,6 +244,12 @@ ul {
   color: white;
   background-color: #609240;
   border-radius: 5px;
+  transition: transform 300ms; 
+}
+
+.quiz-menu:hover {
+  transform: translate( 5%, 5% );
+  cursor: pointer;
 }
 
 .quiz.page {
