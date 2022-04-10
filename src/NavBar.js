@@ -17,6 +17,10 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
     setLogin(event.target.value)
   }
 
+  function alertNoServer () {
+    window.alert('Server not yet set up. Login feature not available. You may take the quizzes, but your data will not be saved.')
+  }
+
     // *** JSX *** //
   return (
     <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
@@ -99,14 +103,22 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         </h3>
          <form 
           onChange={handleLoginType}
-          onSubmit={enterUserName}
+
+
+      // ### Uncomment out once server is set up ### //
+          // onSubmit={enterUserName}
+
+          onSubmit={alertNoServer}
           value={login}
           id='username-form'>
           <input 
             style={{marginTop: '8px'}} 
             name='username_input'
             type='text' 
-            placeholder='Enter name to play!'>
+
+    placeholder='Future feature'>
+
+          {/* placeholder='Enter name to play!'> */}
           </input>
           <button
             type='submit'

@@ -53,7 +53,10 @@ function PopulationQuiz ({countryData, orderNumbers, populationHighScore, setPop
     if (currentPopulationQuestion >= 25){
       if (populationQuizScore > populationHighScore) {
         setPopulationHighScore(populationQuizScore)
-        patchPopulationUserData()
+        
+        
+        // ### Uncomment out once server is set up ### //
+        // patchPopulationUserData()
         document.getElementById('population-quiz-tv').innerHTML = `<h1>NEW HIGH SCORE!</h1> <h1>Your Score: ${populationQuizScore}</h1> <button id='newHS'>View High Scores</button>`
         document.getElementById('newHS').addEventListener('click', function () {
           history.push('/quizzes')

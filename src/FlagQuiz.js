@@ -52,7 +52,9 @@ function FlagQuiz ({countryData, flagHighScore, setFlagHighScore, fullUserObject
     if (currentFlagQuestion >= 25){
       if (flagQuizScore > flagHighScore) {
         setFlagHighScore(flagQuizScore)
-        patchFlagUserData()
+        
+        // ### Uncomment out once server is set up ### //
+        // patchFlagUserData()
         document.getElementById('flag-quiz-tv').innerHTML = `<h1>NEW HIGH SCORE!</h1> <h1>Your Score: ${flagQuizScore}</h1> <button id='newHS'>View High Scores</button>`
         document.getElementById('newHS').addEventListener('click', function () {
           history.push('/quizzes')

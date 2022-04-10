@@ -47,7 +47,9 @@ function ContinentQuiz ({countryData, continentHighScore, setContinentHighScore,
     if (currentContinentQuestion >= 25){
       if (continentQuizScore > continentHighScore) {
         setContinentHighScore(continentQuizScore)
-        patchContinentUserData()
+        
+        // ### Uncomment out once server is set up ### //
+        // patchContinentUserData()
         document.getElementById('continent-quiz-tv').innerHTML = `<h1>NEW HIGH SCORE!</h1> <h1>Your Score: ${continentQuizScore}</h1> <button id='newHS'>View High Scores</button>`
         document.getElementById('newHS').addEventListener('click', function () {
           history.push('/quizzes')

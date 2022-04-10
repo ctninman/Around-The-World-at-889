@@ -73,7 +73,10 @@ function CapitalQuiz ({countryData, capitalHighScore, setCapitalHighScore, fullU
     if (currentCapitalQuestion >= 25){
       if (capitalQuizScore > capitalHighScore) {
         setCapitalHighScore(capitalQuizScore)
-        patchCapitalUserData()
+        
+        
+        // ### Uncomment out once server is set up ### //
+        // patchCapitalUserData()
         document.getElementById('capital-quiz-tv').innerHTML = `<h1>NEW HIGH SCORE!</h1> <h1>Your Score: ${capitalQuizScore}</h1> <button id='newHS'>View High Scores</button>`
         document.getElementById('newHS').addEventListener('click', function () {
           history.push('/quizzes')
