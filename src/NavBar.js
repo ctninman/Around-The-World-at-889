@@ -88,7 +88,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
       >
         Quizzes
       </NavLink>
-      {/* <NavLink
+      <NavLink
         to='/map'
         exact
         className='nav-link'
@@ -96,7 +96,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Map
-      </NavLink> */}
+      </NavLink>
       </div>
       {/* <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
         <h3 

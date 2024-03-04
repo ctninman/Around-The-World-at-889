@@ -8,9 +8,10 @@ import Home from './Home'
 import Quizzes from './Quizzes';
 import CountriesList from './CountriesList';
 import NavBar from './NavBar';
-import Map from './Map'
+// import Map from './Map'
 
 import './App.css'
+import MapSiteEmbed from './MapSiteEmbed';
 
 function App() {
 
@@ -188,9 +189,9 @@ function App() {
               flagsContinent={flagsContinent}
               setFlagsContinent={setFlagsContinent}/>
           </Route>
-          {/* <Route exact path='/map'>
-            <Map />
-          </Route> */}
+          <Route exact path='/map'>
+            <MapSiteEmbed />
+          </Route>
           <Route exact path='/'>
             <Home />
           </Route>
