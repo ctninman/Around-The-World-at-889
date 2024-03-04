@@ -18,7 +18,7 @@ function ContinentQuiz ({countryData, continentHighScore, setContinentHighScore,
     let i;
     for (i = 0; i < continentButtons.length; i++) {
       continentButtons[i].style.backgroundColor = "lightgray";
-      continentButtons[i].style.color = "black";
+      continentButtons[i].style.color = "#1F419B";
     }
   }
 
@@ -27,7 +27,7 @@ function ContinentQuiz ({countryData, continentHighScore, setContinentHighScore,
       if (event.target.name === continentQuizCountry.continents[0]) {
         event.target.style.backgroundColor = 'green'
         event.target.style.color = 'white'
-        event.target.style.borderColor = 'black'
+        event.target.style.borderColor = '#1F419B'
         setContinentQuizScore(continentQuizScore + 1)
       } else {
         event.target.style.backgroundColor = 'red'

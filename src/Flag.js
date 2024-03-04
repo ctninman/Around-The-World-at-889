@@ -9,7 +9,7 @@ function Flag ({country}) {
       {revealFlag 
         ?  
         <div style ={{display: 'flex', justifyContent: 'center', height: '130px', width: '200px', borderRadius: '5px', alignItems: 'center'}}>
-          <div className='show-country' style={{display: 'flex', justifyContent: 'center', height: '80px', width: '200px', borderRadius: '5px', color: 'white', backgroundColor: 'black', alignItems: 'center', border: '2px solid white'}}> 
+          <div className='show-country' style={{display: 'flex', justifyContent: 'center', height: '80px', width: '200px', borderRadius: '5px', color: 'white', backgroundColor: '#1F419B', alignItems: 'center', border: '2px solid white'}}> 
             <h2>{country.name.common} </h2> 
           </div>
         </div>  

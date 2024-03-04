@@ -20,7 +20,7 @@ function PopulationQuiz ({countryData, orderNumbers, populationHighScore, setPop
     let i;
     for (i = 0; i < populationButtons.length; i++) {
       populationButtons[i].style.backgroundColor = "lightgray";
-      populationButtons[i].style.color = "black";
+      populationButtons[i].style.color = "#1F419B";
     }
   }
 
@@ -29,7 +29,7 @@ function PopulationQuiz ({countryData, orderNumbers, populationHighScore, setPop
       if (event.target.value === orderedCountriesArray[0].name.common) {
         event.target.style.backgroundColor = 'green'
         event.target.style.color = 'white'
-        event.target.style.borderColor = 'black'
+        event.target.style.borderColor = '#1F419B'
         setPopulationQuizScore(populationQuizScore + 1)
       } else {
         event.target.style.backgroundColor = 'red'

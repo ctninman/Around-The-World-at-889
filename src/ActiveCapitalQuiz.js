@@ -40,7 +40,7 @@ function ActiveCapitalQuiz ({ capitalQuizCountry, incorrectOne, incorrectTwo, in
       <div>
         <h1 
           className='tab-header' 
-          style={{backgroundColor: 'black', 
+          style={{backgroundColor: '#1F419B', 
             color: 'white', 
             marginLeft: '50px', 
             marginRight: '50px'}}
@@ -85,7 +85,7 @@ function ActiveCapitalQuiz ({ capitalQuizCountry, incorrectOne, incorrectTwo, in
         </ul>
       </div>
       <div>
-        <button onClick={capitalOnClick} style={{backgroundColor: '#93C572', color: 'black', borderColor: 'black'}}>Next</button>
+        <button onClick={capitalOnClick} style={{backgroundColor: '#93C572', color: '#1F419B', borderColor: '#1F419B'}}>Next</button>
       </div>
     </div>
   )

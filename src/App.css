@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 .App {
-  background-image: url(world-line-map.jpg);
+  /* background-image: url(world-line-map.jpg); */
+  background-image: url(889CultureSiteBackground.jpg);
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vw;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1F419B;
+  font-family: 'Mulish', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 input {
@@ -48,7 +53,7 @@ select {
 
 .flag-button {
   background-color: lightgray;
-  color: black;
+  color: #1F419B;
 }
 
 #login-button {
@@ -59,29 +64,30 @@ select {
 }
 
 .tab-header {
-  background-color: black;
+  background-color: #1F419B;
   color: white;
   padding: 10px;
   border-radius: 10px;
   margin-left: 150px;
   margin-right: 150px;
+  font-weight: bold;
 }
 
 button {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  color: black;
+  color: #1F419B;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: larger;
   margin: 10px;
-  background-color: lightgray;
-  color: black;
+  background-color: #FBEE6E;
+  color: #1F419B;
   border-radius: 5px;
   border: 3px solid;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px #1F419B;
   transition: transform 300ms; 
 }
 
@@ -209,7 +215,7 @@ ul {
   max-width: 95%;
   max-height: 120px;
   margin-top: 5px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px #1F419B;
   transition: transform 300ms; 
 }
 
@@ -241,8 +247,8 @@ ul {
   width: 70px;
   padding: 12px;
   margin: 10px;
-  color: white;
-  background-color: #609240;
+  color: #1F419B;
+  background-color: #F6D20C;
   border-radius: 5px;
   transition: transform 300ms; 
 }
@@ -280,10 +286,10 @@ ul {
   width: 25px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #C6F8A5;
+  background-color: #FBEE6E;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  color: black;
+  color: #1F419B;
   padding-right: 16px;
   padding-left: 5px;
   padding-top: 3px;
@@ -291,7 +297,7 @@ ul {
   font-size: larger;
   border-radius: 5px;
   border: 3px solid;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px #1F419B;
 }
 
 .App-header {
@@ -313,7 +319,7 @@ ul {
 }
 
 .listed-country:hover {
-  box-shadow: inset 165px 0 0 0 #609240;
+  box-shadow: inset 165px 0 0 0 #F6D20C;
 }
 
 

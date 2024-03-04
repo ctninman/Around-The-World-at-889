@@ -5,9 +5,9 @@ const linkStyles = {
   width: "70px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "#609240",
+  background: "#F6D20C",
   textDecoration: "none",
-  color: "white",
+  color: "#1F419B",
   borderRadius: '5px'
 };
 
@@ -30,7 +30,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Home
       </NavLink>
@@ -39,7 +39,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Countries
       </NavLink>
@@ -48,7 +48,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Capitals
       </NavLink>
@@ -57,7 +57,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Continents
       </NavLink>
@@ -66,7 +66,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Flags
       </NavLink>
@@ -75,7 +75,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Population
       </NavLink>
@@ -84,10 +84,19 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         exact
         className='nav-link'
         style={linkStyles}
-        activeStyle={{background: "#93C572", color: 'black'}}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
       >
         Quizzes
       </NavLink>
+      {/* <NavLink
+        to='/map'
+        exact
+        className='nav-link'
+        style={linkStyles}
+        activeStyle={{background: "#FBEE6E", color: '#1F419B', fontWeight: 'bold'}}
+      >
+        Map
+      </NavLink> */}
       </div>
       {/* <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
         <h3 

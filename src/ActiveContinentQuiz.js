@@ -17,7 +17,7 @@ function ActiveContinentQuiz ({currentContinentQuestion, continentQuizScore, con
       <div>
         <h1 
           className='tab-header' 
-          style={{backgroundColor: 'black', 
+          style={{backgroundColor: '#1F419B', 
             color: 'white', 
             marginLeft: '150px', 
             marginRight: '150px'}}>
@@ -36,8 +36,8 @@ function ActiveContinentQuiz ({currentContinentQuestion, continentQuizScore, con
         <button 
           onClick={continentOnClick} 
           style={{backgroundColor: '#93C572', 
-            color: 'black', 
-            borderColor: 'black'}}>
+            color: '#1F419B', 
+            borderColor: '#1F419B'}}>
           Next
         </button>
       </div>

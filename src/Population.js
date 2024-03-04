@@ -68,8 +68,8 @@ function Population ({countries}) {
 
         <h3 
           className='tab-header'  
-          style={{backgroundColor: "#609240", 
-            color: 'white', 
+          style={{backgroundColor: "#F6D20C", 
+            color: '#1F419B', 
             marginLeft: '200px', 
             marginRight: '200px', 
             marginBottom: '0px',
@@ -85,14 +85,14 @@ function Population ({countries}) {
               flexDirection: 'row', 
               alignItems: 'center', 
               justifyContent: 'center',
-              backgroundColor: 'black',
+              backgroundColor: '#1F419B',
               color: '#93C572',
               borderColor: 'white',
               height: '30px'}}>
-            <h3 style={{marginRight: '15px', marginLeft: '15px', width: '50px', textAlign: 'center'}}>Flag</h3>
-            <h3 style={{marginRight: '15px', marginLeft: '15px', width: '200px', textAlign: 'center'}}>Country</h3>
-            <h3 style={{marginRight: '15px', marginLeft: '15px', width: '150px', textAlign: 'center'}}>Population</h3>
-            <h3 style={{marginRight: '15px', marginLeft: '15px', width: '90px', textAlign: 'center'}}>Continent</h3>
+            <h3 style={{color: 'white', marginRight: '15px', marginLeft: '15px', width: '50px', textAlign: 'center'}}>Flag</h3>
+            <h3 style={{color: 'white', marginRight: '15px', marginLeft: '15px', width: '200px', textAlign: 'center'}}>Country</h3>
+            <h3 style={{color: 'white', marginRight: '15px', marginLeft: '15px', width: '150px', textAlign: 'center'}}>Population</h3>
+            <h3 style={{color: 'white', marginRight: '15px', marginLeft: '15px', width: '90px', textAlign: 'center'}}>Continent</h3>
           </div>
         </div>
         <div style={{display: 'flex', flexFlow: 'column wrap', justifyContent: 'center'}}>

@@ -22,7 +22,7 @@ function FlagQuiz ({countryData, flagHighScore, setFlagHighScore, fullUserObject
     let i;
     for (i = 0; i < flagButtons.length; i++) {
       flagButtons[i].style.backgroundColor = "lightgray";
-      flagButtons[i].style.color = "black";
+      flagButtons[i].style.color = "#1F419B";
     }
   }
 
@@ -31,7 +31,7 @@ function FlagQuiz ({countryData, flagHighScore, setFlagHighScore, fullUserObject
       if (event.target.value === flagQuizCountry.name.common) {
         event.target.style.backgroundColor = 'green'
         event.target.style.color = 'white'
-        event.target.style.borderColor = 'black'
+        event.target.style.borderColor = '#1F419B'
         setFlagQuizScore(flagQuizScore + 1)
       } else {
         event.target.style.backgroundColor = 'red'

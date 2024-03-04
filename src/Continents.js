@@ -40,8 +40,8 @@ function Continents ({alphabetize, countries, continentCountryList, setContinent
           className='tab-header' 
           style=
             {{cursor: 'default',
-            backgroundColor: '#609240', 
-            color: 'white', marginLeft: '200px', 
+            backgroundColor: '#F6D20C', 
+            color: '#1F419B', marginLeft: '200px', 
             marginRight: '200px', 
             marginTop: '0px'}}
           >There are {continentCountryList.length} countries in {selectedContinents}.

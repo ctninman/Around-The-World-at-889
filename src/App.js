@@ -8,6 +8,7 @@ import Home from './Home'
 import Quizzes from './Quizzes';
 import CountriesList from './CountriesList';
 import NavBar from './NavBar';
+import Map from './Map'
 
 import './App.css'
 
@@ -24,12 +25,13 @@ function App() {
   const [userName, setUserName] = useState('')
   const [fullUserObject, setFullUserObject] = useState({
     "userName": "Player",
+    'totalHighScore': 0,
     "flagsHighScore": 0,
     "populationHighScore": 0,
     "continentsHighScore": 0,
     "capitalsHighScore": 0
   })
-  const [userScore, setUserScore] = useState(0)
+  const [userScore, setUserScore] = useState(fullUserObject.flagsHighScore + fullUserObject.populationHighScore + fullUserObject.continentsHighScore + fullUserObject.capitalsHighScore)
   const [continentHighScore, setContinentHighScore] = useState(fullUserObject.continentsHighScore)
   const [flagHighScore, setFlagHighScore] = useState(fullUserObject.flagsHighScore)
   const [capitalHighScore, setCapitalHighScore] = useState(fullUserObject.capitalsHighScore)
@@ -48,6 +50,10 @@ function App() {
       setCapitalCountryList(unMemberCountries)
     })
   }, [] )
+
+  useEffect (() => {
+    setUserScore(continentHighScore + flagHighScore + capitalHighScore + populationHighScore)
+  }, [continentHighScore, flagHighScore, capitalHighScore, populationHighScore] )
 
   function enterUserName (event) {
     event.preventDefault()
@@ -182,6 +188,9 @@ function App() {
               flagsContinent={flagsContinent}
               setFlagsContinent={setFlagsContinent}/>
           </Route>
+          {/* <Route exact path='/map'>
+            <Map />
+          </Route> */}
           <Route exact path='/'>
             <Home />
           </Route>

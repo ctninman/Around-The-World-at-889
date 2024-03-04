@@ -51,11 +51,11 @@ function Quizzes ({countryData,
     <>
       <div className='quiz-page'>
         <h1 className='tab-header'>Quizzes</h1>
-        <NavLink to="/quizzes"  exact className='quiz-menu' activeStyle={{background: "#93C572", color: 'black'}}>Quiz Home</NavLink>
-        <NavLink to="/quizzes/population-quiz" className='quiz-menu' activeStyle={{background: "#93C572", color: 'black'}}>Population Quiz</NavLink>
-        <NavLink to="/quizzes/flag-quiz" className='quiz-menu' activeStyle={{background: "#93C572", color: 'black'}}>Flag Quiz</NavLink>
-        <NavLink to="/quizzes/continent-quiz" className='quiz-menu' activeStyle={{background: "#93C572", color: 'black'}}>Continent Quiz</NavLink>
-        <NavLink to="/quizzes/capital-quiz" className='quiz-menu' activeStyle={{background: "#93C572", color: 'black'}}>Capital Quiz</NavLink>
+        <NavLink to="/quizzes"  exact className='quiz-menu' activeStyle={{background: "#FBEE6E", fontWeight: 'bold', color: '#1F419B'}}>Quiz Home</NavLink>
+        <NavLink to="/quizzes/population-quiz" className='quiz-menu' activeStyle={{background: "#FBEE6E", fontWeight: 'bold', color: '#1F419B'}}>Population Quiz</NavLink>
+        <NavLink to="/quizzes/flag-quiz" className='quiz-menu' activeStyle={{background: "#FBEE6E", fontWeight: 'bold', color: '#1F419B'}}>Flag Quiz</NavLink>
+        <NavLink to="/quizzes/continent-quiz" className='quiz-menu' activeStyle={{background: "#FBEE6E", fontWeight: 'bold', color: '#1F419B'}}>Continent Quiz</NavLink>
+        <NavLink to="/quizzes/capital-quiz" className='quiz-menu' activeStyle={{background: "#FBEE6E", fontWeight: 'bold', color: '#1F419B'}}>Capital Quiz</NavLink>
         <Switch>
           <Route exact path='/quizzes'>
             <QuizHome 

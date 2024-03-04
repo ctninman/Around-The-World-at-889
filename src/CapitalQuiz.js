@@ -22,7 +22,7 @@ function CapitalQuiz ({countryData, capitalHighScore, setCapitalHighScore, fullU
     let i;
     for (i = 0; i < capitalButtons.length; i++) {
       capitalButtons[i].style.backgroundColor = "lightgray";
-      capitalButtons[i].style.color = "black";
+      capitalButtons[i].style.color = "#1F419B";
     }
   }
 
@@ -52,7 +52,7 @@ function CapitalQuiz ({countryData, capitalHighScore, setCapitalHighScore, fullU
       if (event.target.value === capitalQuizCountry.name.common) {
         event.target.style.backgroundColor = 'green'
         event.target.style.color = 'white'
-        event.target.style.borderColor = 'black'
+        event.target.style.borderColor = '#1F419B'
         setCapitalQuizScore(capitalQuizScore + 1)
       } else {
         event.target.style.backgroundColor = 'red'
