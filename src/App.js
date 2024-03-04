@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Capitals from './Capitals'
 import Flags from './Flags'
 import Continents from './Continents'
@@ -130,7 +130,7 @@ function App() {
         enterUserName={enterUserName}
         login={login}
         setLogin={setLogin}/>
-        <Routes>
+        <Switch>
         <Route exact path='/countries'>
             <CountriesList 
               alphabetizeCountries={alphabetize} 
@@ -185,7 +185,7 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route>
-        </Routes>
+        </Switch>
        
     </div>
   )
