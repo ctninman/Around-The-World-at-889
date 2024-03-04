@@ -25,17 +25,17 @@ function Home () {
           <h1>🇳🇴 Explore and learn the flags, capitals, 🇹🇬<br/> continents, and population<br/>of all the countries of the world.</h1>
           {/* <h2 style={{cursor: 'default'}}>🇵🇭 Do you have what it takes 🇪🇸<br/> to reach 100 ⭐ in the quiz section?</h2> */}
           {/* <h3>Create or enter your username to keep track of your high scores</h3> */}
-        <div>
+        {/* <div>
           <img src={WorldMap} alt="World Map" style={{marginTop: '20px', marginBottom: '20px', width: '100%' }} />
-        </div>  
+        </div>   */}
         </div>
            <div>
           <h1>🇧🇪🇺🇸🇬🇩🇬🇷🇳🇮🇨🇳🇿🇼🇩🇯🇻🇺🇦🇷🇨🇾🇦🇿🇨🇺🇹🇳🇳🇵🇲🇦🇳🇱🇧🇩🇳🇷🇪🇨🇸🇬🇰🇪🇦🇬</h1>
         </div>
       </div>
-      <footer style={{textAlign: 'left', color: 'white', paddingLeft: '10px', paddingBottom: '10px', paddingTop: '20px'}}>
+      {/* <footer style={{textAlign: 'left', color: 'white', paddingLeft: '10px', paddingBottom: '10px', paddingTop: '20px'}}>
           Background photo by <a style={{color: 'lightgray'}}href={'https://unsplash.com/@marjan_blan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'}>Marjan Blan | @marjanblan</a> on <a style={{color: 'lightgray'}} href={"https://unsplash.com/s/photos/world-map?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"}>Unsplash</a>
-        </footer>
+        </footer> */}
     </div>
   )
 }
