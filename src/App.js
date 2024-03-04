@@ -41,7 +41,7 @@ function App() {
     .then(res => res.json())
     .then(data => {
       const unMemberCountries = data.filter((country) => country.unMember === true || country.cca2 === 'PS' || country.cca2 === 'GW');
-      console.log('un', unMemberCountries);
+      // console.log('un', unMemberCountries);
       setCountries(unMemberCountries)
       setFlagCountryList(unMemberCountries)
       setContinentCountryList(unMemberCountries)
