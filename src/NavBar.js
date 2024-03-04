@@ -89,7 +89,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
         Quizzes
       </NavLink>
       </div>
-      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
+      {/* <div style={{display: 'flex', flexDirection: 'row', alignItems: 'flex-start'}}>
         <h3 
           style={{paddingRight: '5px', 
           verticalAlign: 'top', 
@@ -105,7 +105,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
           onChange={handleLoginType}
 
 
-      // ### Uncomment out once server is set up ### //
+      //### Uncomment out once server is set up ### //
           // onSubmit={enterUserName}
 
           onSubmit={alertNoServer}
@@ -118,7 +118,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
 
     placeholder='Future feature'>
 
-          {/* placeholder='Enter name to play!'> */}
+  
           </input>
           <button
             type='submit'
@@ -129,7 +129,7 @@ function NavBar({ login, setLogin, enterUserName, userName, userScore}) {
               Enter
            </button>
         </form>
-      </div>
+      </div> */}
     </div>
   )
 }
