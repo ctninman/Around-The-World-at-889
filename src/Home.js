@@ -3,13 +3,13 @@ import {useEffect} from 'react'
 function Home () {
 
   useEffect (() => {
-    document.title = "WORLD QUIZ World"
+    document.title = "Around the World at 889"
   }, [] )
 
   return (
     <div>
       <div>
-        <h1 className='tab-header'>Welcome to WORLD QUIZ WORLD!</h1>
+        <h1 className='tab-header'>Around the World at 889</h1>
       </div>
       <div>
         <div>
